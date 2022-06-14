@@ -1,38 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    border-radius: 5px
+}
+
+body {
+    background-color: rgba(222, 232, 229, 0.53);
+}
+
 .App {
-  text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin: 50px auto;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 300;
+    height: 400px
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ul {
+    display: inline-block;
+    width: 100%;
+    font-size: 16px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+li {
+    margin-top: 5px;
+    padding: 5px;
+    box-shadow: cadetblue;
+    display: inline-block;
+    width: 100%;
+    list-style-type: none;
+    border: 1px solid rgba(34, 60, 80, 0.2);
+    box-shadow: 1px 0px 8px 1px rgba(34, 60, 80, 0.2);
+
+}
+li:hover {
+  cursor:pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+span {
+    margin: 0 10px 0 5px;
 }
 
-.App-link {
-  color: #61dafb;
+button {
+    background-color: rgba(34, 60, 80, 0.2);
+    padding: 10px;
+    width: 20%
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:hover {
+    background-color: rgba(34, 60, 80, 0.514);
 }
+
+input {
+    display: inline-block;
+    width: 60%;
+    padding: 5px 0;
+    border: 1px solid rgba(34, 60, 80, 0.2);
+    box-shadow: 1px 0px 8px 1px rgba(34, 60, 80, 0.2);
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 20px;
+    color: rgb(243, 11, 11);
+}
+
+.addTodoBlock {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.option {
+    margin-top: 5px;
+    display: flex;
+    font-size: 12px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(134, 134, 134);
+}
+
+.setting-option {
+    border: 1px solid rgba(34, 60, 80, 0.2);
+    box-shadow: 1px 0px 8px 1px rgba(34, 60, 80, 0.2);
+    padding: 5px 15px;
+}
+
+.setting-option:hover {
+    background-color: rgba(34, 60, 80, 0.2);
+}
+
+.wrapper {
+    width: 80%;
+    background-color: #fff;
+    padding: 25px;
+    box-shadow: 1px 0px 8px 1px rgba(34, 60, 80, 0.2);
+}
+
+.completed-todo {
+    text-decoration: line-through;
+    color: rgba(34, 60, 80, 0.6);
+}
+ 
